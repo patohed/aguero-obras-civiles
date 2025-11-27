@@ -220,6 +220,71 @@ Mantenimiento integral de instalaciones industriales, galpones, estructuras met�
 
 ---
 
+### Servicio 7: Pisos de Granito con Resina Epóxica (H3)
+#### ✨ Colocación Profesional y Acabados de Alta Resistencia
+
+Instalación especializada de pisos de granito utilizando arena y resina epóxica de última generación. Solución durable, estética y de alto rendimiento para espacios comerciales, industriales y residenciales.
+
+**Descripción del Servicio:**
+La colocación de pisos de granito con resina epóxica es un sistema innovador que combina la belleza natural del granito triturado con la resistencia y durabilidad de las resinas epóxicas. Este tipo de pavimento ofrece una superficie lisa, brillante, sin juntas y altamente resistente al tránsito pesado y a los agentes químicos.
+
+**Proceso de Instalación:**
+1. **Preparación de Base:** Limpieza y nivelación del sustrato existente, asegurando una superficie sólida y libre de impurezas
+2. **Imprimación:** Aplicación de imprimador epóxico para garantizar adherencia perfecta
+3. **Mezcla Especializada:** Preparación de mortero epóxico con granito triturado calibrado y arena seleccionada
+4. **Colocación:** Vertido y nivelación manual del compuesto en espesores controlados (8-12mm)
+5. **Alisado y Fratasado:** Trabajo manual con llanas y frotachos para lograr superficie uniforme
+6. **Pulido:** Proceso de pulido mecánico en varias etapas (desbaste, afinado, abrillantado)
+7. **Sellado Final:** Aplicación de selladores protectores para realzar brillo y proteger la superficie
+
+**Ventajas del Sistema:**
+- **Resistencia Superior:** Soporta tráfico intenso, impactos y cargas pesadas
+- **Sin Juntas:** Superficie continua y monolítica, sin líneas de separación
+- **Fácil Mantenimiento:** Limpieza simple con agua y detergente neutro
+- **Estética Premium:** Acabado brillante similar al mármol pulido
+- **Antideslizante:** Texturas adaptables según necesidad (pulido brillante o satinado)
+- **Durabilidad:** Vida útil superior a 20 años con mantenimiento básico
+- **Resistencia Química:** Tolera aceites, grasas, ácidos diluidos y productos de limpieza
+
+**Aplicaciones:**
+- **Comercios:** Locales, concesionarias, showrooms, supermercados
+- **Industria:** Plantas de producción, depósitos, talleres mecánicos
+- **Institucional:** Escuelas, hospitales, edificios públicos
+- **Residencial:** Garajes, patios, galerías, terrazas
+- **Estacionamientos:** Cocheras cubiertas, playas de estacionamiento
+
+**Variedad de Colores y Acabados:**
+- Gris plata (granito gris con arena blanca)
+- Gris oscuro (granito negro con arena gris)
+- Beige clásico (granito beige con arena clara)
+- Verde musgo (granito verde con arena natural)
+- Combinaciones personalizadas según proyecto
+- Acabados: pulido espejo, satinado, o texturado antideslizante
+
+**Garantía y Calidad:**
+Utilizamos resinas epóxicas de importación de alta performance, granito triturado calibrado de primera calidad y mano de obra certificada. Ofrecemos garantía escrita sobre materiales y aplicación.
+
+**Mantenimiento Recomendado:**
+- Limpieza diaria con agua y detergente neutro
+- Evitar productos abrasivos o muy ácidos
+- Pulido profesional cada 3-5 años (opcional, para renovar brillo)
+- Aplicación de cera líquida cada 6 meses para preservar brillo
+
+**Tiempo de Ejecución:**
+- Superficies pequeñas (hasta 50m²): 3-5 días
+- Superficies medianas (50-200m²): 1-2 semanas
+- Superficies grandes (más de 200m²): A convenir según proyecto
+
+**Presupuesto Incluye:**
+- Visita técnica y relevamiento
+- Provisión de todos los materiales (resina epóxica, granito, arena, imprimadores, selladores)
+- Mano de obra especializada
+- Equipamiento y herramientas
+- Limpieza final de obra
+- Asesoramiento post-instalación
+
+---
+
 ### CTA Final de Servicios
 **¿Necesitás un servicio especializado? Consultanos sin compromiso.**
 

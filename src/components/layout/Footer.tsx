@@ -94,6 +94,10 @@ export function Footer() {
                   <div className="w-1.5 h-1.5 bg-brand-accent rounded-full" />
                   <span>Mantenimiento Industrial</span>
                 </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-1.5 h-1.5 bg-brand-accent rounded-full" />
+                  <span>Pisos de Granito Epóxico</span>
+                </li>
               </ul>
             </div>
           </div>

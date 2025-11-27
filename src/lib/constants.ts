@@ -8,7 +8,8 @@ import {
   Target,
   Award,
   Zap,
-  Radio
+  Radio,
+  Sparkles
 } from 'lucide-react'
 
 export const services = [
@@ -36,12 +37,17 @@ export const services = [
     icon: Zap,
     title: 'Instalaciones Especiales',
     description: 'Instalaciones eléctricas, sanitarias y sistemas sustentables. Paneles solares fotovoltaicos, termotanques solares y sistemas de ahorro energético para reducir tu consumo hasta un 90%.',
-  },
   {
     icon: Truck,
     title: 'Mantenimiento Industrial',
     description: 'Mantenimiento preventivo y correctivo de instalaciones industriales, galpones, estructuras metálicas, cubiertas y sistemas eléctricos. Inspecciones técnicas periódicas.',
   },
+  {
+    icon: Sparkles,
+    title: 'Pisos de Granito con Resina Epóxica',
+    description: 'Colocación profesional de pisos de granito con arena y resina epóxica. Acabados de alta resistencia, durabilidad y estética superior. Ideal para espacios industriales, comerciales y residenciales. Resistente al tráfico pesado y fácil mantenimiento.',
+  },
+] },
 ]
 
 export const values = [
