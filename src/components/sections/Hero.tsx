@@ -11,23 +11,23 @@ import { useState, useEffect } from 'react'
 
 const heroImages = [
   {
-    src: '/hero-1.jpg',
+    src: 'https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=2070&auto=format&fit=crop',
     alt: 'Construcción de obras civiles e infraestructura industrial',
   },
   {
-    src: '/hero-2.jpg',
+    src: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop',
     alt: 'Trabajadores profesionales en construcción de edificios',
   },
   {
-    src: '/hero-3.jpg',
+    src: 'https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?q=80&w=2070&auto=format&fit=crop',
     alt: 'Estructura metálica y construcción industrial',
   },
   {
-    src: '/hero-4.jpg',
+    src: 'https://images.unsplash.com/photo-1597211833712-5e41faa202ea?q=80&w=2070&auto=format&fit=crop',
     alt: 'Obras civiles - construcción industrial con grúa',
   },
   {
-    src: '/hero-5.jpg',
+    src: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2070&auto=format&fit=crop',
     alt: 'Pisos industriales de concreto en construcción',
   },
 ]
