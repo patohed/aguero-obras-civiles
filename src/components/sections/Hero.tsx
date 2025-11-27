@@ -11,24 +11,24 @@ import { useState, useEffect } from 'react'
 
 const heroImages = [
   {
-    src: '/hero-construccion.jpg',
-    alt: 'Construcción de obras civiles - infraestructura',
+    src: '/hero-obra-1.jpg',
+    alt: 'Construcción de obras civiles e infraestructura industrial',
   },
   {
-    src: '/granito-epoxico.jpg',
-    alt: 'Pisos de granito con resina epóxica de alta calidad',
+    src: '/hero-granito-aplicacion.jpg',
+    alt: 'Aplicación profesional de pisos de granito con resina epóxica',
   },
   {
-    src: '/hero-estructura.jpg',
-    alt: 'Estructuras metálicas industriales',
+    src: '/hero-obra-2.jpg',
+    alt: 'Obras civiles - construcción industrial con grúa',
   },
   {
-    src: '/hero-piso-industrial.jpg',
-    alt: 'Pisos industriales profesionales',
+    src: '/hero-obra-3.jpg',
+    alt: 'Construcción de pisos industriales de concreto',
   },
   {
-    src: '/hero-torre.jpg',
-    alt: 'Torres de comunicación - trabajos en altura',
+    src: '/hero-obra-4.jpg',
+    alt: 'Estructuras metálicas y trabajos de construcción en altura',
   },
 ]
 
