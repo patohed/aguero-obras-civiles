@@ -19,9 +19,9 @@ export function Footer() {
                 <Image
                   src="/logo.png"
                   alt="Agüero Obras Civiles"
-                  width={160}
-                  height={50}
-                  className="h-auto w-40"
+                  width={200}
+                  height={65}
+                  className="h-auto w-50"
                 />
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
