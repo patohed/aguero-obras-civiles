@@ -47,7 +47,7 @@ export function Header() {
           >
             <div className="relative px-4 py-3 rounded-xl shadow-[0_4px_20px_rgba(39,76,94,0.15)] hover:shadow-[0_8px_30px_rgba(39,76,94,0.25)] transition-all duration-300 bg-white/90 backdrop-blur-sm group-hover:bg-white">
               <Image
-                src="/logo-aguero-v1-negro-extra-grande.png"
+                src="/logo-aguero-bn-v1-negro.svg"
                 alt="Agüero Obras Civiles"
                 width={280}
                 height={90}
