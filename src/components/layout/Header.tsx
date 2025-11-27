@@ -43,16 +43,18 @@ export function Header() {
           {/* Logo Oficial */}
           <button 
             onClick={() => handleNavClick('#inicio')}
-            className="flex-shrink-0 transition-opacity hover:opacity-80"
+            className="flex-shrink-0 transition-all duration-300 hover:scale-105 drop-shadow-lg hover:drop-shadow-xl"
           >
-            <Image
-              src="/logo.png"
-              alt="Agüero Obras Civiles"
-              width={220}
-              height={75}
-              className="h-16 w-auto"
-              priority
-            />
+            <div className="relative bg-white/50 backdrop-blur-sm p-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+              <Image
+                src="/logo.png"
+                alt="Agüero Obras Civiles"
+                width={220}
+                height={75}
+                className="h-16 w-auto"
+                priority
+              />
+            </div>
           </button>
 
           {/* Desktop Navigation - Mejora UX: Estados hover más visibles */}
