@@ -15,9 +15,9 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {/* Company Info */}
             <div className="lg:col-span-2">
-              <div className="mb-6 bg-white/98 px-6 py-5 rounded-xl inline-block shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
+              <div className="mb-6 bg-white px-6 py-5 rounded-xl inline-block shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
                 <Image
-                  src="/logo-aguero-v1-negro-extra-grande.png"
+                  src="/logo-aguero-bn-v1-negro.svg"
                   alt="Agüero Obras Civiles"
                   width={300}
                   height={100}
