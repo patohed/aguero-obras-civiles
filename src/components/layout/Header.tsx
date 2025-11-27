@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 import { Container } from '@/components/shared/Container'
 import { Button } from '@/components/ui/button'
 import { navigationLinks } from '@/lib/constants'
@@ -39,12 +40,20 @@ export function Header() {
     >
       <Container>
         <div className="flex items-center justify-between">
-          {/* Brand Text - Sin logo */}
-          <div className="flex-shrink-0">
-            <span className="text-2xl font-bold text-brand-primary">
-              Agüero Obras Civiles
-            </span>
-          </div>
+          {/* Logo Oficial */}
+          <button 
+            onClick={() => handleNavClick('#inicio')}
+            className="flex-shrink-0 transition-opacity hover:opacity-80"
+          >
+            <Image
+              src="/logo.png"
+              alt="Agüero Obras Civiles"
+              width={180}
+              height={60}
+              className="h-12 w-auto"
+              priority
+            />
+          </button>
 
           {/* Desktop Navigation - Mejora UX: Estados hover más visibles */}
           <nav className="hidden md:flex items-center space-x-1">

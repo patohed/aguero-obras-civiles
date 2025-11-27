@@ -1,4 +1,4 @@
-import { Logo } from '@/components/shared/Logo'
+import Image from 'next/image'
 import { Container } from '@/components/shared/Container'
 import { Separator } from '@/components/ui/separator'
 import { Mail, Phone, MapPin } from 'lucide-react'
@@ -16,7 +16,13 @@ export function Footer() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="mb-4 bg-white p-3 rounded-md inline-block">
-                <Logo width={160} height={50} />
+                <Image
+                  src="/logo.png"
+                  alt="Agüero Obras Civiles"
+                  width={160}
+                  height={50}
+                  className="h-auto w-40"
+                />
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
                 {siteConfig.description}
