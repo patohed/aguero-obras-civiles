@@ -1,14 +1,48 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/shared/Container'
 import { fadeInUp } from '@/lib/animations'
 import { ArrowRight } from 'lucide-react'
 import { stats } from '@/lib/constants'
+import { useState, useEffect } from 'react'
+
+const heroImages = [
+  {
+    src: '/hero-construccion.jpg',
+    alt: 'Construcción de obras civiles - infraestructura',
+  },
+  {
+    src: '/granito-epoxico.jpg',
+    alt: 'Pisos de granito con resina epóxica de alta calidad',
+  },
+  {
+    src: '/hero-estructura.jpg',
+    alt: 'Estructuras metálicas industriales',
+  },
+  {
+    src: '/hero-piso-industrial.jpg',
+    alt: 'Pisos industriales profesionales',
+  },
+  {
+    src: '/hero-torre.jpg',
+    alt: 'Torres de comunicación - trabajos en altura',
+  },
+]
 
 export function Hero() {
+  const [currentImage, setCurrentImage] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length)
+    }, 5000) // Cambia cada 5 segundos
+
+    return () => clearInterval(interval)
+  }, [])
+
   const handleContactClick = () => {
     const element = document.querySelector('#contacto')
     if (element) {
@@ -18,18 +52,45 @@ export function Hero() {
 
   return (
     <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-32">
-      {/* Background Image with Overlay */}
+      {/* Background Image Carousel with Overlay */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2076&auto=format&fit=crop"
-          alt="Construcción de obras civiles - infraestructura"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-        />
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentImage}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 1, ease: 'easeInOut' }}
+            className="absolute inset-0"
+          >
+            <Image
+              src={heroImages[currentImage].src}
+              alt={heroImages[currentImage].alt}
+              fill
+              className="object-cover"
+              priority={currentImage === 0}
+              quality={90}
+            />
+          </motion.div>
+        </AnimatePresence>
         {/* Overlay más oscuro para mejor legibilidad */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-black/50" />
+        
+        {/* Carousel Indicators */}
+        <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10 flex gap-2">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImage(index)}
+              className={`h-1.5 rounded-full transition-all duration-300 ${
+                index === currentImage 
+                  ? 'w-8 bg-white' 
+                  : 'w-1.5 bg-white/40 hover:bg-white/60'
+              }`}
+              aria-label={`Ir a imagen ${index + 1}`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Content */}
