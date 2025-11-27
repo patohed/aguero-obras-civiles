@@ -27,8 +27,8 @@ export function About() {
             className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop"
-              alt="Equipo de construcción trabajando"
+              src="/about-construccion.jpg"
+              alt="Profesionales de construcción civil en obra"
               fill
               className="object-cover"
             />
