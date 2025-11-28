@@ -43,17 +43,10 @@ export function Header() {
           {/* Logo Oficial */}
           <button 
             onClick={() => handleNavClick('#inicio')}
-            className="flex-shrink-0 transition-all duration-300 hover:scale-[1.02] group"
+            className="flex-shrink-0 transition-all duration-300 hover:scale-[1.02]"
           >
-            <div className="relative px-4 py-3 rounded-xl shadow-[0_4px_20px_rgba(39,76,94,0.15)] hover:shadow-[0_8px_30px_rgba(39,76,94,0.25)] transition-all duration-300 bg-white/90 backdrop-blur-sm group-hover:bg-white">
-              <Image
-                src="/logo.png"
-                alt="Agüero Obras Civiles"
-                width={280}
-                height={90}
-                className="h-16 md:h-20 w-auto drop-shadow-sm"
-                priority
-              />
+            <div className="text-2xl md:text-3xl font-bold text-brand-primary">
+              Agüero Obras Civiles
             </div>
           </button>
 
