@@ -32,10 +32,10 @@ export function Header() {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
         isScrolled
-          ? 'bg-white shadow-lg py-3'
-          : 'bg-white/95 backdrop-blur-md py-4 shadow-sm'
+          ? 'bg-white/98 backdrop-blur-lg shadow-lg py-3'
+          : 'bg-transparent py-5'
       )}
     >
       <Container>
@@ -45,13 +45,21 @@ export function Header() {
             onClick={() => handleNavClick('#inicio')}
             className="flex-shrink-0 transition-all duration-300 hover:scale-[1.02] group"
           >
-            <div className="relative px-4 py-3 rounded-xl shadow-[0_4px_20px_rgba(39,76,94,0.15)] hover:shadow-[0_8px_30px_rgba(39,76,94,0.25)] transition-all duration-300 bg-white/90 backdrop-blur-sm group-hover:bg-white">
+            <div className={cn(
+              "relative px-4 py-2.5 rounded-xl transition-all duration-500",
+              isScrolled 
+                ? "bg-white shadow-[0_4px_20px_rgba(39,76,94,0.15)] group-hover:shadow-[0_8px_30px_rgba(39,76,94,0.25)]"
+                : "bg-white/95 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.3)] group-hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
+            )}>
               <Image
                 src="/logo-aguero-v1-negro-mediano.png"
                 alt="Agüero Obras Civiles"
-                width={260}
-                height={85}
-                className="h-16 md:h-20 lg:h-24 w-auto drop-shadow-sm"
+                width={240}
+                height={78}
+                className={cn(
+                  "w-auto drop-shadow-sm transition-all duration-300",
+                  isScrolled ? "h-12 md:h-14" : "h-14 md:h-16 lg:h-18"
+                )}
                 priority
                 unoptimized
               />
@@ -64,7 +72,12 @@ export function Header() {
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="relative px-4 py-2 text-gray-700 hover:text-brand-primary transition-all duration-200 font-medium group"
+                className={cn(
+                  "relative px-4 py-2 transition-all duration-200 font-semibold group",
+                  isScrolled 
+                    ? "text-gray-700 hover:text-brand-primary" 
+                    : "text-white hover:text-brand-accent drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+                )}
               >
                 {link.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-accent group-hover:w-full transition-all duration-300" />
@@ -77,7 +90,12 @@ export function Header() {
             <Button
               onClick={() => handleNavClick('#contacto')}
               size="lg"
-              className="bg-brand-accent hover:bg-brand-accent/90 text-white shadow-md hover:shadow-lg transition-all duration-300 font-semibold"
+              className={cn(
+                "font-bold shadow-lg hover:shadow-xl transition-all duration-300",
+                isScrolled
+                  ? "bg-brand-accent hover:bg-brand-accent/90 text-white"
+                  : "bg-white text-brand-primary hover:bg-white/90 shadow-[0_10px_30px_rgba(0,0,0,0.4)]"
+              )}
             >
               Solicitar Presupuesto
             </Button>
@@ -86,7 +104,12 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-gray-700 hover:text-brand-primary"
+            className={cn(
+              "md:hidden p-2 transition-colors duration-300",
+              isScrolled
+                ? "text-gray-700 hover:text-brand-primary"
+                : "text-white hover:text-white/80 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+            )}
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (
@@ -99,12 +122,17 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden pt-4 pb-3 space-y-3 animate-fade-in">
+          <nav className={cn(
+            "md:hidden pt-4 pb-3 space-y-3 animate-fade-in rounded-lg mt-2",
+            isScrolled
+              ? "bg-white"
+              : "bg-white/95 backdrop-blur-md"
+          )}>
             {navigationLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="block w-full text-left py-2 text-gray-700 hover:text-brand-primary transition-colors duration-200 font-medium"
+                className="block w-full text-left py-2 px-4 text-gray-700 hover:text-brand-primary transition-colors duration-200 font-medium"
               >
                 {link.label}
               </button>
