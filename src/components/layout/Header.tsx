@@ -45,13 +45,13 @@ export function Header() {
             onClick={() => handleNavClick('#inicio')}
             className="flex-shrink-0 transition-all duration-300 hover:scale-[1.02] group"
           >
-            <div className="relative px-3 py-2.5 rounded-xl shadow-[0_4px_20px_rgba(39,76,94,0.15)] hover:shadow-[0_8px_30px_rgba(39,76,94,0.25)] transition-all duration-300 bg-white/90 backdrop-blur-sm group-hover:bg-white">
+            <div className="relative px-4 py-3 rounded-xl shadow-[0_4px_20px_rgba(39,76,94,0.15)] hover:shadow-[0_8px_30px_rgba(39,76,94,0.25)] transition-all duration-300 bg-white/90 backdrop-blur-sm group-hover:bg-white">
               <Image
                 src="/logo-aguero-v1-negro-mediano.png"
                 alt="Agüero Obras Civiles"
-                width={200}
-                height={65}
-                className="h-14 md:h-16 w-auto drop-shadow-sm"
+                width={260}
+                height={85}
+                className="h-16 md:h-20 lg:h-24 w-auto drop-shadow-sm"
                 priority
                 unoptimized
               />

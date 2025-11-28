@@ -15,13 +15,13 @@ export function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {/* Company Info */}
             <div className="lg:col-span-2">
-              <div className="mb-6 bg-white px-5 py-4 rounded-xl inline-block shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
+              <div className="mb-6 bg-white px-6 py-5 rounded-xl inline-block shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
                 <Image
                   src="/logo-aguero-v1-negro-mediano.png"
                   alt="Agüero Obras Civiles"
-                  width={220}
-                  height={70}
-                  className="h-auto w-48 md:w-56"
+                  width={320}
+                  height={105}
+                  className="h-auto w-64 md:w-72 lg:w-80"
                   unoptimized
                 />
               </div>
