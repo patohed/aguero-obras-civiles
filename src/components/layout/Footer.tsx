@@ -36,12 +36,25 @@ export function Footer() {
                   </div>
                   <span className="break-all">{siteConfig.links.email}</span>
                 </a>
-                <a href={`tel:${siteConfig.links.phone}`} className="flex items-center space-x-3 text-sm group hover:text-white transition-colors">
-                  <div className="w-8 h-8 bg-brand-accent/10 rounded-lg flex items-center justify-center group-hover:bg-brand-accent/20 transition-colors">
-                    <Phone className="h-4 w-4 text-brand-accent" />
-                  </div>
-                  <span>{siteConfig.links.phone}</span>
-                </a>
+                <div className="space-y-2">
+                  {siteConfig.contacts.map((contact, index) => (
+                    <a 
+                      key={index}
+                      href={`https://wa.me/${contact.phoneClean}`} 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-3 text-sm group hover:text-white transition-colors"
+                    >
+                      <div className="w-8 h-8 bg-brand-accent/10 rounded-lg flex items-center justify-center group-hover:bg-brand-accent/20 transition-colors">
+                        <Phone className="h-4 w-4 text-brand-accent" />
+                      </div>
+                      <div>
+                        <div className="text-xs text-gray-500">{contact.name}</div>
+                        <span>{contact.phone}</span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
                 <div className="flex items-start space-x-3 text-sm">
                   <div className="w-8 h-8 bg-brand-accent/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
                     <MapPin className="h-4 w-4 text-brand-accent" />

@@ -7,9 +7,23 @@ export const siteConfig = {
     email: 'agueroobrasciviles@gmail.com',
     phone: '351-3890419',
     phoneFormatted: '+54 351 3890419',
+    phone2: '3853-118022',
+    phone2Formatted: '+54 3853 118022',
     address: 'Caseros 2245, Córdoba Capital, Argentina',
     addressFull: 'Caseros 2245, Dp 1 pb, Alto Alberdi, Córdoba Capital',
   },
+  contacts: [
+    {
+      name: 'Hugo Agüero',
+      phone: '+54 9 3513 89-0419',
+      phoneClean: '5493513890419',
+    },
+    {
+      name: 'Martín Agüero',
+      phone: '+54 9 3853 11-8022',
+      phoneClean: '5493853118022',
+    },
+  ],
   hours: {
     weekdays: 'Lunes a Viernes: 8:00 a 18:00 hs',
     saturday: 'Sábados: 9:00 a 13:00 hs',

@@ -98,18 +98,25 @@ export function Contact() {
 
             <Card className="hover:shadow-lg transition-all duration-300 border-gray-200 hover:border-brand-primary/30">
               <CardContent className="p-5">
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3">
                   <div className="w-12 h-12 bg-gradient-to-br from-brand-primary/10 to-brand-primary/5 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-brand-primary" />
                   </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-1 text-sm">Teléfono / WhatsApp</h3>
-                    <a
-                      href={`tel:${siteConfig.links.phone}`}
-                      className="text-gray-600 hover:text-brand-accent transition-colors font-medium text-xs"
-                    >
-                      {siteConfig.links.phone}
-                    </a>
+                  <div className="space-y-2 flex-1">
+                    <h3 className="font-bold text-gray-900 mb-2 text-sm">Teléfono / WhatsApp</h3>
+                    {siteConfig.contacts.map((contact, index) => (
+                      <div key={index} className="space-y-0.5">
+                        <p className="text-xs font-semibold text-gray-700">{contact.name}</p>
+                        <a
+                          href={`https://wa.me/${contact.phoneClean}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-600 hover:text-brand-accent transition-colors font-medium text-xs block"
+                        >
+                          {contact.phone}
+                        </a>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </CardContent>
