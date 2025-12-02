@@ -17,7 +17,7 @@ export function Footer() {
             <div className="lg:col-span-2">
               <div className="mb-6 bg-white px-6 py-5 rounded-xl inline-block shadow-[0_8px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.4)] transition-all duration-300">
                 <Image
-                  src="/logo-aguero-v1-negro-mediano.png"
+                  src="/logo-aguero.png"
                   alt="Agüero Obras Civiles"
                   width={320}
                   height={105}

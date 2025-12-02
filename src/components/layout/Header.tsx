@@ -52,7 +52,7 @@ export function Header() {
                 : "bg-white/95 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.3)] group-hover:shadow-[0_10px_40px_rgba(0,0,0,0.4)]"
             )}>
               <Image
-                src="/logo-aguero-v1-negro-mediano.png"
+                src="/logo-aguero.png"
                 alt="Agüero Obras Civiles"
                 width={240}
                 height={78}
